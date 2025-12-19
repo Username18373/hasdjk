@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon File Search</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="app-container">
+        <header class="app-header">
+            <h1><i class="fas fa-search"></i> NIGGER</h1>
+            <p>Upload files and extract user:pass patterns with AI precision</p>
+        </header>
+
+        <div class="upload-section">
+            <div class="drop-area" id="dropArea">
+                <input type="file" id="fileInput" multiple>
+                <div class="drop-area-content">
+                    <i class="fas fa-cloud-upload-alt"></i>
+                    <p>Drag & drop files here or click to browse</p>
+                    <button id="browseBtn" class="glass-btn"><i class="fas fa-folder-open"></i> BROWSE FILES</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="search-section">
+            <div class="search-box">
+                <input type="text" id="searchQuery" placeholder="Search for user:pass (e.g., luisforg@hotmail.com:Lfor2396)">
+                <button id="searchQueryBtn" class="glass-btn"><i class="fas fa-search"></i> SEARCH</button>
+            </div>
+            <button id="searchAllBtn" class="glass-btn"><i class="fas fa-file-alt"></i> SCAN ALL</button>
+        </div>
+
+        <div class="results-section">
+            <h2><i class="fas fa-list-ul"></i> RESULTS</h2>
+            <div class="results-container" id="results">
+                <div class="empty-state">
+                    <i class="fas fa-database"></i>
+                    <p>Upload files to begin</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
